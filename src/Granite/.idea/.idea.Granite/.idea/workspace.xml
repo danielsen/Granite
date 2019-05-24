@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cefa0120-8187-4d70-bfad-2ed6e8dce33e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Granite/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Granite/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Granite/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Granite/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Granite/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Granite/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/Common/Data/DatabaseFixture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/QueueDsl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/Repositories.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/Common/Data/TestData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/Granite.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/Integration/Core/PersistedQueueTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/Integration/Infrastructure/Common/Data/QueuePersistenceTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Debug/netcoreapp2.2/Granite.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Debug/netcoreapp2.2/Granite.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Debug/netcoreapp2.2/Granite.Tests.Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Debug/netcoreapp2.2/Granite.Tests.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Debug/netcoreapp2.2/Granite.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Granite.Tests.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Granite.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/Granite.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/DataStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/DequeueResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/IPersistedQueue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/LocalOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/Options.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/PersistedQueue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/Queue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/QueueItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/SerializationType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Core/SerializingQueue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Granite.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Collections/EnumerableExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/IRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/ISession.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/Context.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/IEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/SessionBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Repositories/Repository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/IProtoBufSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/ProtoBufSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/Infrastructure/Common/StringExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/Debug/netstandard2.0/Granite.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/Debug/netstandard2.0/Granite.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/Debug/netstandard2.0/Granite.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/Debug/netstandard2.0/Granite.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/Granite.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/Granite.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/Granite.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Granite/obj/project.packagespec.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Granite/Core/PersistedQueue.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3360">
+              <caret line="210" column="62" selection-start-line="210" selection-start-column="62" selection-end-line="210" selection-end-column="62" />
+              <folding>
+                <marker date="1558696397974" expanded="true" signature="6:242" ph="..." />
+                <marker date="1558696397974" expanded="true" signature="266:8514" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="325:8512" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="713:853" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="963:1265" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="1328:1699" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="1761:2132" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="2231:2716" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="2268:2675" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="2763:3092" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="3006:3073" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="3128:3201" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="3260:3727" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="3793:4058" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="3828:4048" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="3862:3933" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="3969:4034" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="4119:4409" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="4504:4962" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="4642:4876" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="5065:6662" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="5201:6650" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="5231:6636" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="5605:6556" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="5759:6004" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="6033:6534" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="6347:6507" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="6735:6800" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="6907:7468" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="7531:7695" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="7760:8047" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="8117:8339" ph="{...}" />
+                <marker date="1558696397974" expanded="true" signature="8388:8506" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/SessionBase.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
+              <folding>
+                <marker date="1558692595018" expanded="true" signature="6:184" ph="..." />
+                <marker date="1558692595018" expanded="true" signature="234:4239" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="276:4237" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="367:418" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="515:647" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="684:1301" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="882:974" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="1195:1291" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="1330:1414" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="1454:1549" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="1621:1738" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="1811:1935" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="2015:2160" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="2236:2406" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="2508:2719" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="2795:2957" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="3029:3207" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="3280:3345" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="3448:3650" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="3765:3910" ph="{...}" />
+                <marker date="1558692595018" expanded="true" signature="4051:4231" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Granite/Core/QueueItem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding>
+                <marker date="1558694541792" expanded="true" signature="37:588" ph="{...}" />
+                <marker date="1558694541792" expanded="true" signature="79:586" ph="{...}" />
+                <marker date="1558694541792" expanded="true" signature="112:176" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Granite.Tests/Integration/Core/PersistedQueueTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="964">
+              <caret line="120" column="37" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
+              <folding>
+                <marker date="1558695025134" expanded="true" signature="6:135" ph="..." />
+                <marker date="1558695025134" expanded="true" signature="177:4351" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="234:4349" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="320:463" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="634:825" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="876:929" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="939:1024" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1033:1107" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1116:1202" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1211:1308" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1317:1406" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1415:1493" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1502:1592" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1601:1702" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="1840:2267" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="2069:2137" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="2277:2362" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="2371:2445" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="2454:2540" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="2549:2646" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="2655:2744" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="2753:2831" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="2840:2930" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="2939:3040" ph="[...]" />
+                <marker date="1558695025134" expanded="true" signature="3181:4343" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="3269:3513" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="3367:3497" ph="{...}" />
+                <marker date="1558695025134" expanded="true" signature="3669:3925" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Granite/Core/PersistedQueue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/SerializationType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/DequeueResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/Queue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/Options.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/SerializingQueue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/StringExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite.Tests/Integration/Core/PersistedQueueTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/ISession.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/ProtoBufSerializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/IProtoBufSerializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/SessionBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/IEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/Context.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Repositories/Repository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Collections/EnumerableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/TestData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/DatabaseFixture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/QueueDsl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/Repositories.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/IPersistedQueue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/QueueItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/DataStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite.Tests/Integration/Infrastructure/Common/Data/QueuePersistenceTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Granite/Core/LocalOptions.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Granite/Core/Class1.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/Options.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/DequeueResult.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/LocalOptions.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/Session.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/DataStore.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/IPersistedQueue.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Repositories/Repository.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/IRepository.cs" />
+        <option value="$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/Repositories.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Collections/EnumerableExtensions.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/StringExtensions.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/ISession.cs" />
+        <option value="$PROJECT_DIR$/Granite.Tests/Common/Data/TestData.cs" />
+        <option value="$PROJECT_DIR$/Granite.Tests/appsettings.json" />
+        <option value="$PROJECT_DIR$/Granite/Core/BaseEntity.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/IEntity.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/Queue.cs" />
+        <option value="$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/QueueDsl.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/SerializationType.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/ProtobufSerializer.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/IProtoBufSerializer.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/ProtoBufSerializer.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/SerializingQueue.cs" />
+        <option value="$PROJECT_DIR$/Granite.Tests/Integration/Infrastructure/Common/Data/QueuePersistenceTests.cs" />
+        <option value="$PROJECT_DIR$/Granite.Tests/Common/Data/DatabaseFixture.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/Context.cs" />
+        <option value="$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/SessionBase.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/QueueItem.cs" />
+        <option value="$PROJECT_DIR$/Granite.Tests/Integration/Core/PersistedQueueTests.cs" />
+        <option value="$PROJECT_DIR$/Granite/Core/PersistedQueue.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.Granite/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.Granite/.idea/indexLayout.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="892" />
+    <option name="width" value="1400" />
+    <option name="height" value="1404" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Common" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Data" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Granite" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Data" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Orm" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cefa0120-8187-4d70-bfad-2ed6e8dce33e" name="Default Changelist" comment="" />
+      <created>1558529092705</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558529092705</updated>
+      <workItem from="1558529094036" duration="20712000" />
+      <workItem from="1558608526586" duration="100000" />
+      <workItem from="1558608649272" duration="9399000" />
+      <workItem from="1558662659403" duration="4966000" />
+      <workItem from="1558667816669" duration="131000" />
+      <workItem from="1558692492171" duration="3126000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38434000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="892" y="0" width="1400" height="1404" extended-state="4" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26300147" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299373" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968652" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32836992" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.3294025" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.3299373" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Granite/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/Granite/Core/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/Granite/Core/DequeueResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <marker date="1558534194442" expanded="true" signature="37:171" ph="{...}" />
+            <marker date="1558534194442" expanded="true" signature="73:169" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/Session.cs" />
+    <entry file="file://$PROJECT_DIR$/Granite/Core/DataStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1558542941200" expanded="true" signature="22:99" ph="{...}" />
+            <marker date="1558542941200" expanded="true" signature="50:97" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/UnitTest1.cs" />
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/Repositories.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <marker date="1558573770103" expanded="true" signature="6:116" ph="..." />
+            <marker date="1558573770103" expanded="true" signature="157:492" ph="{...}" />
+            <marker date="1558573770103" expanded="true" signature="189:490" ph="{...}" />
+            <marker date="1558573770103" expanded="true" signature="350:484" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/StringExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1558575469408" expanded="true" signature="39:274" ph="{...}" />
+            <marker date="1558575469408" expanded="true" signature="82:272" ph="{...}" />
+            <marker date="1558575469408" expanded="true" signature="189:266" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Collections/EnumerableExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <marker date="1558575386116" expanded="true" signature="6:52" ph="..." />
+            <marker date="1558575386116" expanded="true" signature="105:832" ph="{...}" />
+            <marker date="1558575386116" expanded="true" signature="152:830" ph="{...}" />
+            <marker date="1558575386116" expanded="true" signature="225:379" ph="{...}" />
+            <marker date="1558575386116" expanded="true" signature="487:824" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/BaseEntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <marker date="1558614679213" expanded="true" signature="6:156" ph="..." />
+            <marker date="1558614679213" expanded="true" signature="180:705" ph="{...}" />
+            <marker date="1558614679213" expanded="true" signature="220:703" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/IEntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <marker date="1558614679225" expanded="true" signature="63:224" ph="{...}" />
+            <marker date="1558614679225" expanded="true" signature="94:222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/TestData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+          <folding>
+            <marker date="1558613452297" expanded="true" signature="6:184" ph="..." />
+            <marker date="1558613452297" expanded="true" signature="221:1708" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="271:561" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="460:555" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="597:1706" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="897:1052" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="1115:1223" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="1254:1306" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="1386:1472" ph="{...}" />
+            <marker date="1558613452297" expanded="true" signature="1580:1700" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/IProtoBufSerializer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <marker date="1558623505368" expanded="true" signature="71:305" ph="{...}" />
+            <marker date="1558623505368" expanded="true" signature="114:303" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Serialization/ProtoBufSerializer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <marker date="1558623503064" expanded="true" signature="6:32" ph="..." />
+            <marker date="1558623503064" expanded="true" signature="87:888" ph="{...}" />
+            <marker date="1558623503064" expanded="true" signature="147:886" ph="{...}" />
+            <marker date="1558623503064" expanded="true" signature="198:402" ph="{...}" />
+            <marker date="1558623503064" expanded="true" signature="276:392" ph="{...}" />
+            <marker date="1558623503064" expanded="true" signature="466:541" ph="{...}" />
+            <marker date="1558623503064" expanded="true" signature="588:757" ph="{...}" />
+            <marker date="1558623503064" expanded="true" signature="671:747" ph="{...}" />
+            <marker date="1558623503064" expanded="true" signature="806:880" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/SerializationType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <marker date="1558622910424" expanded="true" signature="22:193" ph="{...}" />
+            <marker date="1558622910424" expanded="true" signature="58:191" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/Dsl/QueueDsl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+          <folding>
+            <marker date="1558620392264" expanded="true" signature="6:299" ph="..." />
+            <marker date="1558620392264" expanded="true" signature="340:3311" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="368:3309" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="469:521" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="658:985" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="719:833" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="1160:1582" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="1221:1406" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="1680:3303" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="2136:3293" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="2284:2414" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="2735:2878" ph="{...}" />
+            <marker date="1558620392264" expanded="true" signature="3000:3128" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/IPersistedQueue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <marker date="1558548944112" expanded="true" signature="6:43" ph="..." />
+            <marker date="1558548944112" expanded="true" signature="67:625" ph="{...}" />
+            <marker date="1558548944112" expanded="true" signature="109:623" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/LocalOptions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <folding>
+            <marker date="1558534254618" expanded="true" signature="22:266" ph="{...}" />
+            <marker date="1558534254618" expanded="true" signature="70:264" ph="{...}" />
+            <marker date="1558534254618" expanded="true" signature="172:258" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.Rider2019.1/system/log/UnitTestLogs/Sessions/2019-05-23-21-38-58-476___aa08376f-1157-459f-8c16-d0668d1886bf.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/SerializingQueue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <marker date="1558623585352" expanded="true" signature="6:280" ph="..." />
+            <marker date="1558623585352" expanded="true" signature="304:4451" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="373:4449" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="1329:1408" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="1935:3010" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="2018:3000" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="2067:2986" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="3107:4443" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="3156:4433" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="3304:3434" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="3756:3899" ph="{...}" />
+            <marker date="1558623585352" expanded="true" signature="4021:4149" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/Integration/Infrastructure/Common/Data/QueuePersistenceTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <marker date="1558624554268" expanded="true" signature="6:135" ph="..." />
+            <marker date="1558624554268" expanded="true" signature="199:5484" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="258:5482" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="344:523" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="623:704" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="755:808" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="999:1463" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="1161:1212" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="1473:1559" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="1568:1643" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="1652:1739" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="1748:1846" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="1855:1945" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="1954:2033" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="2042:2133" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="2142:2244" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="2381:3417" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="2496:2555" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="2805:3005" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="3427:3512" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="3521:3595" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="3604:3690" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="3699:3796" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="3805:3894" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="3903:3981" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="3990:4080" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="4089:4190" ph="[...]" />
+            <marker date="1558624554268" expanded="true" signature="4357:5476" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="4701:4769" ph="{...}" />
+            <marker date="1558624554268" expanded="true" signature="4916:5116" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/Options.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <marker date="1558534159222" expanded="true" signature="37:1077" ph="{...}" />
+            <marker date="1558534159222" expanded="true" signature="67:1075" ph="{...}" />
+            <marker date="1558534159222" expanded="true" signature="82:276" ph="/// By default if a messages is not acknowledged within 30 seconds of ... " />
+            <marker date="1558534159222" expanded="true" signature="343:548" ph="/// When a message is queued it is typically available for immediate ... " />
+            <marker date="1558534159222" expanded="true" signature="677:1025" ph="/// This option is only available when a dead queue is specified. This ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/Common/Data/DatabaseFixture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#158#0" expanded="true" />
+            <marker date="1558667038635" expanded="true" signature="244:1716" ph="{...}" />
+            <marker date="1558667038635" expanded="true" signature="339:1613" ph="{...}" />
+            <marker date="1558667038635" expanded="true" signature="513:655" ph="{...}" />
+            <marker date="1558667038635" expanded="true" signature="850:1425" ph="{...}" />
+            <marker date="1558667038635" expanded="true" signature="1644:1710" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/IRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#147#0" expanded="true" />
+            <marker date="1558549154892" expanded="true" signature="252:751" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Repositories/Repository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#147#0" expanded="true" />
+            <marker date="1558549154884" expanded="true" signature="277:1784" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="372:424" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="472:543" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="592:667" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="772:850" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="906:978" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="1027:1102" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="1168:1240" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="1289:1357" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="1426:1500" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="1578:1651" ph="{...}" />
+            <marker date="1558549154884" expanded="true" signature="1703:1778" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/ISession.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#230#0" expanded="true" />
+            <marker date="1558575801532" expanded="true" signature="308:1159" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/Queue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <marker date="1558615528881" expanded="true" signature="95:311" ph="{...}" />
+            <marker date="1558615528881" expanded="true" signature="124:187" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/Context.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+            <marker date="1558667459559" expanded="true" signature="159:1065" ph="{...}" />
+            <marker date="1558667459559" expanded="true" signature="298:318" ph="{...}" />
+            <marker date="1558667459559" expanded="true" signature="474:1059" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Infrastructure/Common/Data/Orm/SessionBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <marker date="1558692595018" expanded="true" signature="6:184" ph="..." />
+            <marker date="1558692595018" expanded="true" signature="234:4239" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="276:4237" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="367:418" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="515:647" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="684:1301" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="882:974" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="1195:1291" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="1330:1414" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="1454:1549" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="1621:1738" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="1811:1935" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="2015:2160" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="2236:2406" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="2508:2719" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="2795:2957" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="3029:3207" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="3280:3345" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="3448:3650" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="3765:3910" ph="{...}" />
+            <marker date="1558692595018" expanded="true" signature="4051:4231" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/QueueItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <marker date="1558694541792" expanded="true" signature="37:588" ph="{...}" />
+            <marker date="1558694541792" expanded="true" signature="79:586" ph="{...}" />
+            <marker date="1558694541792" expanded="true" signature="112:176" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite.Tests/Integration/Core/PersistedQueueTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="120" column="37" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
+          <folding>
+            <marker date="1558695025134" expanded="true" signature="6:135" ph="..." />
+            <marker date="1558695025134" expanded="true" signature="177:4351" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="234:4349" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="320:463" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="634:825" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="876:929" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="939:1024" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1033:1107" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1116:1202" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1211:1308" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1317:1406" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1415:1493" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1502:1592" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1601:1702" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="1840:2267" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="2069:2137" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="2277:2362" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="2371:2445" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="2454:2540" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="2549:2646" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="2655:2744" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="2753:2831" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="2840:2930" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="2939:3040" ph="[...]" />
+            <marker date="1558695025134" expanded="true" signature="3181:4343" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="3269:3513" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="3367:3497" ph="{...}" />
+            <marker date="1558695025134" expanded="true" signature="3669:3925" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Granite/Core/PersistedQueue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="210" column="62" selection-start-line="210" selection-start-column="62" selection-end-line="210" selection-end-column="62" />
+          <folding>
+            <marker date="1558696397974" expanded="true" signature="6:242" ph="..." />
+            <marker date="1558696397974" expanded="true" signature="266:8514" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="325:8512" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="713:853" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="963:1265" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="1328:1699" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="1761:2132" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="2231:2716" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="2268:2675" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="2763:3092" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="3006:3073" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="3128:3201" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="3260:3727" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="3793:4058" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="3828:4048" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="3862:3933" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="3969:4034" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="4119:4409" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="4504:4962" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="4642:4876" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="5065:6662" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="5201:6650" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="5231:6636" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="5605:6556" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="5759:6004" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="6033:6534" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="6347:6507" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="6735:6800" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="6907:7468" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="7531:7695" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="7760:8047" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="8117:8339" ph="{...}" />
+            <marker date="1558696397974" expanded="true" signature="8388:8506" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

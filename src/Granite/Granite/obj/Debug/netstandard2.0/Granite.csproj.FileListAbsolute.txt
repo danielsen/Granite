@@ -1,0 +1,9 @@
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/bin/Debug/netstandard2.0/Granite.deps.json
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/bin/Debug/netstandard2.0/Granite.dll
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/bin/Debug/netstandard2.0/Granite.pdb
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/obj/Debug/netstandard2.0/Granite.csprojAssemblyReference.cache
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/obj/Debug/netstandard2.0/Granite.csproj.CoreCompileInputs.cache
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/obj/Debug/netstandard2.0/Granite.AssemblyInfoInputs.cache
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/obj/Debug/netstandard2.0/Granite.AssemblyInfo.cs
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/obj/Debug/netstandard2.0/Granite.dll
+/home/dnielsen/Repositories/Personal/Granite/src/Granite/Granite/obj/Debug/netstandard2.0/Granite.pdb
